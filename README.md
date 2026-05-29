@@ -1,4 +1,4 @@
-# Student Management System
+# Student Record Management System
 
 Name: Fernandez, Maria Cassandra M.
 Section: BSIT 2-2
