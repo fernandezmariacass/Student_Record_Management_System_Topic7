@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="Controller"
+            prefWidth="600" prefHeight="520">
+
+    <Label text="Name:"        AnchorPane.topAnchor="20"  AnchorPane.leftAnchor="20"/>
+    <TextField fx:id="txtName" AnchorPane.topAnchor="40"  AnchorPane.leftAnchor="20" prefWidth="200"/>
+
+    <Label text="Course:"        AnchorPane.topAnchor="85"  AnchorPane.leftAnchor="20"/>
+    <TextField fx:id="txtCourse" AnchorPane.topAnchor="105" AnchorPane.leftAnchor="20" prefWidth="200"/>
+
+    <Label text="Year Level:"  AnchorPane.topAnchor="150" AnchorPane.leftAnchor="20"/>
+    <ChoiceBox fx:id="cbYear"  AnchorPane.topAnchor="170" AnchorPane.leftAnchor="20" prefWidth="200"/>
+
+    <Button text="Add"    onAction="#addStudent"    AnchorPane.topAnchor="215" AnchorPane.leftAnchor="20"
+            style="-fx-background-color: #F4A7B9; -fx-text-fill: #6B2D4E; -fx-font-weight: bold; -fx-background-radius: 6; -fx-cursor: hand;"/>
+    <Button text="Update" onAction="#updateStudent" AnchorPane.topAnchor="215" AnchorPane.leftAnchor="80"
+            style="-fx-background-color: #F4A7B9; -fx-text-fill: #6B2D4E; -fx-font-weight: bold; -fx-background-radius: 6; -fx-cursor: hand;"/>
+    <Button text="Delete" onAction="#deleteStudent" AnchorPane.topAnchor="215" AnchorPane.leftAnchor="155"
+            style="-fx-background-color: #F4A7B9; -fx-text-fill: #6B2D4E; -fx-font-weight: bold; -fx-background-radius: 6; -fx-cursor: hand;"/>
+    <Button text="Clear"  onAction="#clearFields"   AnchorPane.topAnchor="215" AnchorPane.leftAnchor="222"
+            style="-fx-background-color: #F4A7B9; -fx-text-fill: #6B2D4E; -fx-font-weight: bold; -fx-background-radius: 6; -fx-cursor: hand;"/>
+
+    <TableView fx:id="table"
+               AnchorPane.topAnchor="265"
+               AnchorPane.leftAnchor="20"
+               AnchorPane.rightAnchor="20"
+               AnchorPane.bottomAnchor="20">
+        <columns>
+            <TableColumn fx:id="colId"     text="ID"     prefWidth="50"/>
+            <TableColumn fx:id="colName"   text="Name"   prefWidth="150"/>
+            <TableColumn fx:id="colCourse" text="Course" prefWidth="150"/>
+            <TableColumn fx:id="colYear"   text="Year"   prefWidth="100"/>
+        </columns>
+    </TableView>
+
+</AnchorPane>
