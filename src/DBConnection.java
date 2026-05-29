@@ -7,7 +7,7 @@ public class DBConnection {
             return DriverManager.getConnection(
                     "jdbc:postgresql://localhost:5432/studentdb",
                     "postgres",
-                    "kaveh!2006mcf"
+                    "password"
             );
         } catch (Exception e) {
             e.printStackTrace();
